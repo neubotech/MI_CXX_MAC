@@ -235,6 +235,7 @@
 				8D287CB81B34819F00E8B03F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
