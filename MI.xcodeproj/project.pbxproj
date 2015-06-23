@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8D287CB31B34819F00E8B03F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D287CB21B34819F00E8B03F /* main.cpp */; };
+		8D4899141B3934FC004C0981 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4899131B3934FC004C0981 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		8D287CAF1B34819F00E8B03F /* MI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MI; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D287CB21B34819F00E8B03F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8D4898F71B38E49B004C0981 /* filtfilt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = filtfilt.h; sourceTree = "<group>"; };
+		8D4898F81B38E5D8004C0981 /* hilbert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hilbert.h; sourceTree = "<group>"; };
+		8D4899131B3934FC004C0981 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D4899141B3934FC004C0981 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +46,7 @@
 		8D287CA61B34819F00E8B03F = {
 			isa = PBXGroup;
 			children = (
+				8D4899131B3934FC004C0981 /* Accelerate.framework */,
 				8D287CB11B34819F00E8B03F /* MI */,
 				8D287CB01B34819F00E8B03F /* Products */,
 			);
@@ -58,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				8D287CB21B34819F00E8B03F /* main.cpp */,
+				8D4898F71B38E49B004C0981 /* filtfilt.h */,
+				8D4898F81B38E5D8004C0981 /* hilbert.h */,
 			);
 			path = MI;
 			sourceTree = "<group>";
@@ -129,8 +137,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -171,8 +179,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -198,6 +206,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
